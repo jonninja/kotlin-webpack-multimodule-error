@@ -1,0 +1,5 @@
+//rootProject.name = 'vegasful'
+//
+include 'samplejs'
+include 'sample-common'
+include 'sample-common-js'

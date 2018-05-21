@@ -1,0 +1,30 @@
+
+buildscript {
+    repositories {
+        mavenLocal()
+        jcenter()
+        maven { url "https://dl.bintray.com/kotlin/kotlin-eap" }
+        maven { url "https://kotlin.bintray.com/kotlinx" }
+    }
+
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.2.41"
+        classpath "org.jetbrains.kotlin:kotlin-frontend-plugin:0.0.31"
+//        classpath "org.jetbrains.kotlinx:kotlinx-gradle-serialization-plugin:${properties["KOTLIN_SERIALIZATION_VERSION"]}"
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        mavenCentral()
+        maven { url "https://kotlin.bintray.com/kotlin-js-wrappers" }
+        maven { url "https://kotlin.bintray.com/ktor" }
+        maven { url "https://kotlin.bintray.com/kotlinx" }
+    }
+}
+
+allprojects {
+    group = "com.steamstreet.vegasful"
+    version = "1.0-SNAPSHOT"
+}
